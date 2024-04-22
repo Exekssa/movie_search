@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie</title>
+    <link rel="stylesheet" href="movieSearch.css">
+</head>
+
+<body>
+
+    <form id="form" class="neon-border">
+
+
+        <div class="formText">
+            <h2>Search</h2>
+            <label for="title-inp">Title</label>
+            <input type="text" name="title" id="title-inp" class="formField">
+            <label for="type-inp">Type</label>
+            <select id="type-inp" name="type" class="formField">
+                <option value="movie">Movie</option>
+                <option value="series">Series</option>
+                <option value="episode">Episode</option>
+            </select>
+            <input type="submit" value="Search" class="button">
+        </div>
+        <img src="Materials/mainCat.jpg" alt="supercat">
+    </form>
+
+    <h2 class="result">New space movies</h2>
+    <h2 class="notFound noDisplay">Movie not found!</h2>
+    <div class="films">
+        <div class="mov movie0" data-movie-id="0">
+            <img class="filmPoster" alt="">
+            <div class="filmInfo">
+                <div class="filmType"></div>
+                <h4 class="filmName"></h4>
+                <div class="filmYear"></div>
+                <button class="getFilmDetails">Details</button>
+            </div>
+        </div>
+
+
+        <div class="mov movie1" data-movie-id="1">
+            <img class="filmPoster" alt="">
+            <div class="filmInfo">
+                <div class="filmType"></div>
+                <h4 class="filmName"></h4>
+                <div class="filmYear"></div>
+                <button class="getFilmDetails">Details</button>
+            </div>
+        </div>
+
+        <div class="mov movie2" data-movie-id="2">
+            <img class="filmPoster" alt="">
+            <div class="filmInfo">
+                <div class="filmType"></div>
+                <h4 class="filmName"></h4>
+                <div class="filmYear"></div>
+                <button class="getFilmDetails">Details</button>
+            </div>
+        </div>
+
+        <div class="mov movie3" data-movie-id="3">
+            <img class="filmPoster" alt="">
+            <div class="filmInfo">
+                <div class="filmType"></div>
+                <h4 class="filmName"></h4>
+                <div class="filmYear"></div>
+                <button class="getFilmDetails">Details</button>
+            </div>
+        </div>
+
+        <div class="mov movie4" data-movie-id="4">
+            <img class="filmPoster" alt="">
+            <div class="filmInfo">
+                <div class="filmType"></div>
+                <h4 class="filmName"></h4>
+                <div class="filmYear"></div>
+                <button class="getFilmDetails">Details</button>
+            </div>
+        </div>
+
+        <div class="mov movie5" data-movie-id="5">
+            <img class="filmPoster" alt="">
+            <div class="filmInfo">
+                <div class="filmType"></div>
+                <h4 class="filmName"></h4>
+                <div class="filmYear"></div>
+                <button class="getFilmDetails">Details</button>
+            </div>
+        </div>
+
+        <div class="mov movie6" data-movie-id="6">
+            <img class="filmPoster" alt="">
+            <div class="filmInfo">
+                <div class="filmType"></div>
+                <h4 class="filmName"></h4>
+                <div class="filmYear"></div>
+                <button class="getFilmDetails">Details</button>
+            </div>
+        </div>
+
+        <div class="mov movie7" data-movie-id="7">
+            <img class="filmPoster" alt="">
+            <div class="filmInfo">
+                <div class="filmType"></div>
+                <h4 class="filmName"></h4>
+                <div class="filmYear"></div>
+                <button class="getFilmDetails">Details</button>
+            </div>
+        </div>
+
+        <div class="mov movie8" data-movie-id="8">
+            <img class="filmPoster" alt="">
+            <div class="filmInfo">
+                <div class="filmType"></div>
+                <h4 class="filmName"></h4>
+                <div class="filmYear"></div>
+                <button class="getFilmDetails">Details</button>
+            </div>
+        </div>
+
+        <div class="mov movie9" data-movie-id="9">
+            <img class="filmPoster" alt="">
+            <div class="filmInfo">
+                <div class="filmType"></div>
+                <h4 class="filmName"></h4>
+                <div class="filmYear"></div>
+                <button class="getFilmDetails">Details</button>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="navigation">
+        <button id="arrowLeft">
+            <<</button>
+
+                <button class="changePage">1</button>
+                <button class="changePage">2</button>
+                <button class="changePage">3</button>
+                <button class="changePage">4</button>
+                <button class="changePage">5</button>
+                <button class="changePage">6</button>
+
+                <button id="arrowRight">>></button>
+    </div>
+
+    <div class="noDisplay popUp">
+
+        <div class="popUpInfo">
+            <div class="cancel">&#215;</div>
+            <h2>Film info</h2>
+
+            <div class="popUpContent">
+                <img class="d-poster" src="" alt="Movie Poster">
+
+                <div>
+                    <div class="info">
+                        <ul>
+                            <li>Title: <span class="d-filmName"></span></li>
+                            <li>Released: <span class="d-released"></span></li>
+                            <li>Genre: <span class="d-genre"></span></li>
+                            <li>Country: <span class="d-country"></span></li>
+                            <li>Director: <span class="d-director"></span></li>
+                            <li>Writer: <span class="d-writer"></span></li>
+                            <li>Actors: <span class="d-actors"></span></li>
+                            <li>Awards: <span class="d-awards"></span></li>
+                            <li>Description: <span class="d-description"></span></li>
+
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="movieSearch.js"></script>
+</body>
+
+</html>
